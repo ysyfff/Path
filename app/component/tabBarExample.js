@@ -92,7 +92,7 @@ var TabBarExample = React.createClass({
               presses: this.state.presses + 1
             });
           }}>
-          {this._renderContent('#21551C', 'Green Tab', this.state.presses)}
+          {this._renderContent('#21551C', 'Green Tab')}
         </TabBarIOS.Item>
       </TabBarIOS>
     );
