@@ -4,6 +4,7 @@ import {
   TabBarIOS
 } from 'react-native';
 
+import Icon from 'react-native-vector-icons/Ionicons';
 
 export default class TabBar extends Component {
     constructor(props) {
@@ -12,9 +13,13 @@ export default class TabBar extends Component {
             dataSource: {},
             selectedTab: ''
         }
+        this.activedKey = '';
     }
     render() {
         return this._trans();
+    }
+    componentDidMount() {
+        this.activedKey && this.setState({selectedTab: this.activedKey});
     }
     //将数据结构解析成<TabBarIOS><TabBarIOS.item></></>
     _trans() {
@@ -22,10 +27,9 @@ export default class TabBar extends Component {
         let createBarItem = (item) => {
             item.key = item.title;
 
-            item.selected = (this.state.selectedTab == item.key);
+            item.selected = (this.state.selectedTab == item.title);
             //处理renderAsOriginal字段，设置selectedTab属性
-            item.renderAsOriginal && (item.selected = true);
-
+            item.defaultSelected && (this.activedKey = item.key);
             //截获onPress并处理onPress
             let tmpOnPress = item.onPress;
             item.onPress = () => {
@@ -36,9 +40,9 @@ export default class TabBar extends Component {
             }
 
             return (
-                <TabBarIOS.Item {...item}>
+                <Icon.TabBarItemIOS {...item}>
                     {item.renderedContent}
-                </TabBarIOS.Item>
+                </Icon.TabBarItemIOS>
             )
         };
 
