@@ -53,14 +53,3 @@ export default class TabBar extends Component {
         );
     }
 }
-
-var styles = StyleSheet.create({
-  tabContent: {
-    flex: 1,
-    alignItems: 'center',
-  },
-  tabText: {
-    color: 'white',
-    margin: 50,
-  },
-});
