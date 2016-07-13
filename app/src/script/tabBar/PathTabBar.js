@@ -3,7 +3,8 @@
 import React, {Component} from 'react'
 import {Text, StyleSheet, View} from 'react-native'
 
-import TabBar from '../component/TabBar'
+import TabBar from '../../../component/TabBar'
+import Info from '../user/info'
 
 
 export default class PathTabBar extends Component {
@@ -14,7 +15,7 @@ export default class PathTabBar extends Component {
         }
     }
     _createTabBar() {
-        var me = this;
+        var me = this
         return {
             tabBarProps: {
                 tintColor: "blue",
@@ -24,16 +25,16 @@ export default class PathTabBar extends Component {
                     title: '他的',
                     iconName: 'ios-alarm-outline',
                     selectedIconName: 'ios-alarm',
-                    defaultSelected: true,
-                    renderedContent: <Text>3</Text>
+                    renderedContent: <View style={styles.container}><Text>3</Text></View>
                 },
                 {
-                    title: '我的',
+                    title: '我',
                     iconName:'ios-person-outline',
                     selectedIconName:'ios-person',
+                    defaultSelected: true,
                     onPress: () => {
                     },
-                    renderedContent: <Text>2</Text>
+                    renderedContent: <Info />
                 },
             ]
         }

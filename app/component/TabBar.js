@@ -1,10 +1,9 @@
-import React, { Component } from 'react';
-import {
-  StyleSheet,
-  TabBarIOS
-} from 'react-native';
+'use strict'
 
-import Icon from 'react-native-vector-icons/Ionicons';
+import React, { Component } from 'react'
+import { StyleSheet, TabBarIOS } from 'react-native'
+
+import Icon from 'react-native-vector-icons/Ionicons'
 
 export default class TabBar extends Component {
     constructor(props) {
@@ -28,7 +27,7 @@ export default class TabBar extends Component {
             item.key = item.title;
 
             item.selected = (this.state.selectedTab == item.title);
-            //处理renderAsOriginal字段，设置selectedTab属性
+            //处理defaultSelected字段，设置selectedTab属性
             item.defaultSelected && (this.activedKey = item.key);
             //截获onPress并处理onPress
             let tmpOnPress = item.onPress;
