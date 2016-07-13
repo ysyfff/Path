@@ -23,7 +23,7 @@ export default class TabBar extends Component {
     }
     //将数据结构解析成<TabBarIOS><TabBarIOS.item></></>
     _trans() {
-        let {basic,items} = this.props.dataSource;
+        let {tabBarProps,tabBarItemsProps} = this.props.dataSource;
         let createBarItem = (item) => {
             item.key = item.title;
 
@@ -47,8 +47,8 @@ export default class TabBar extends Component {
         };
 
         return (
-            <TabBarIOS {...basic}>
-                {items.map(createBarItem)}
+            <TabBarIOS {...tabBarProps}>
+                {tabBarItemsProps.map(createBarItem)}
             </TabBarIOS>
         );
     }
