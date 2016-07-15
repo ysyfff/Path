@@ -14,62 +14,93 @@ export default class Info extends Component {
     render() {
         var data = {
             custom: {
-                style: [{backgroundColor: 'skyblue'}]
+                style: [{backgroundColor: '#f8f8f8'}]
             },
-            sets: [
-                {
+            sets: [{
                     custom: {
-
+                        style: {marginTop: 20}
                     },
                     list: [{
-                        custom: {
-
-                        },
                         bar: {
                             iconStart: {
-                                name: 'subway',
+                                name: 'user',
                                 size: 16,
-                                color: 'skyblue'
+                                color: 'blueviolet'
                             },
                             iconEnd: {
                                 name: 'angle-right',
                                 size: 16,
-                                color: 'skyblue'
+                                color: 'blueviolet'
                             },
                             title: {
-                                main: '地铁记录',
+                                main: '基本信息',
                                 custom: {
-                                    style: {color: 'skyblue'}
+                                    style: {color: 'blueviolet'}
                                 }
                             }
                         }
                     },{
-                        custom: {
-                            
-                        },
                         bar: {
                             iconStart: {
-                                name: 'subway',
+                                name: 'history',
                                 size: 16,
-                                color: 'skyblue'
+                                color: 'blueviolet'
                             },
                             iconEnd: {
                                 name: 'angle-right',
                                 size: 16,
-                                color: 'skyblue'
+                                color: 'blueviolet'
+                            },
+                            title: {
+                                main: '历史记录',
+                                custom: {
+                                    style: {color: 'blueviolet'}
+                                }
+                            }
+                        }
+                    }]
+                },
+                {
+                    list: [{
+                        bar: {
+                            iconStart: {
+                                name: 'subway',
+                                size: 16,
+                                color: 'blueviolet'
+                            },
+                            iconEnd: {
+                                name: 'angle-right',
+                                size: 16,
+                                color: 'blueviolet'
                             },
                             title: {
                                 main: '地铁记录',
                                 custom: {
-                                    style: {color: 'skyblue'}
+                                    style: {color: 'blueviolet'}
                                 }
                             }
                         }
-                    }
-
-                    ]
+                    },{
+                        bar: {
+                            iconStart: {
+                                name: 'bus',
+                                size: 16,
+                                color: 'blueviolet'
+                            },
+                            iconEnd: {
+                                name: 'angle-right',
+                                size: 16,
+                                color: 'blueviolet'
+                            },
+                            title: {
+                                main: '公交记录',
+                                custom: {
+                                    style: {color: 'blueviolet'}
+                                }
+                            }
+                        }
+                    }]
                 }
-
             ]
         }
         return (
