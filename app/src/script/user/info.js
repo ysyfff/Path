@@ -28,15 +28,42 @@ export default class Info extends Component {
                         bar: {
                             iconStart: {
                                 name: 'subway',
-                                size: 20,
-                                color: 'green'
+                                size: 16,
+                                color: 'skyblue'
                             },
                             iconEnd: {
-                                name: 'hand-o-right',
-                                size: 20,
-                                color: 'green'
+                                name: 'angle-right',
+                                size: 16,
+                                color: 'skyblue'
                             },
-                            title: '地铁记录'
+                            title: {
+                                main: '地铁记录',
+                                custom: {
+                                    style: {color: 'skyblue'}
+                                }
+                            }
+                        }
+                    },{
+                        custom: {
+                            
+                        },
+                        bar: {
+                            iconStart: {
+                                name: 'subway',
+                                size: 16,
+                                color: 'skyblue'
+                            },
+                            iconEnd: {
+                                name: 'angle-right',
+                                size: 16,
+                                color: 'skyblue'
+                            },
+                            title: {
+                                main: '地铁记录',
+                                custom: {
+                                    style: {color: 'skyblue'}
+                                }
+                            }
                         }
                     }
 
