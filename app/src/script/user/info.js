@@ -24,7 +24,7 @@ export default class Info extends Component {
                         bar: {
                             iconStart: {
                                 name: 'user',
-                                size: 16,
+                                size: 22,
                                 color: 'blueviolet'
                             },
                             iconEnd: {
@@ -43,7 +43,7 @@ export default class Info extends Component {
                         bar: {
                             iconStart: {
                                 name: 'history',
-                                size: 16,
+                                size: 22,
                                 color: 'blueviolet'
                             },
                             iconEnd: {
@@ -65,7 +65,7 @@ export default class Info extends Component {
                         bar: {
                             iconStart: {
                                 name: 'heart-o',
-                                size: 16,
+                                size: 22,
                                 color: 'blueviolet'
                             },
                             iconEnd: {
@@ -84,7 +84,7 @@ export default class Info extends Component {
                         bar: {
                             iconStart: {
                                 name: 'heart',
-                                size: 16,
+                                size: 22,
                                 color: 'blueviolet'
                             },
                             iconEnd: {
@@ -103,7 +103,7 @@ export default class Info extends Component {
                         bar: {
                             iconStart: {
                                 name: 'subway',
-                                size: 16,
+                                size: 22,
                                 color: 'blueviolet'
                             },
                             iconEnd: {
@@ -122,7 +122,7 @@ export default class Info extends Component {
                         bar: {
                             iconStart: {
                                 name: 'bus',
-                                size: 16,
+                                size: 22,
                                 color: 'blueviolet'
                             },
                             iconEnd: {
@@ -141,7 +141,7 @@ export default class Info extends Component {
                         bar: {
                             iconStart: {
                                 name: 'train',
-                                size: 16,
+                                size: 22,
                                 color: 'blueviolet'
                             },
                             iconEnd: {
@@ -160,7 +160,7 @@ export default class Info extends Component {
                         bar: {
                             iconStart: {
                                 name: 'plane',
-                                size: 16,
+                                size: 22,
                                 color: 'blueviolet'
                             },
                             iconEnd: {
