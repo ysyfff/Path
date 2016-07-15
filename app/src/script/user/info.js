@@ -14,7 +14,7 @@ export default class Info extends Component {
     render() {
         var data = {
             basic: {
-                style: [{backgroundColor: 'skyblue', alignItems: 'center', justifyContent: 'center'}, styles.container]
+                style: [{backgroundColor: 'skyblue', alignItems: 'center', justifyContent: 'center'}]
             },
             sets: [
                 [

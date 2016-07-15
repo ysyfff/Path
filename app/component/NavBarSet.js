@@ -14,12 +14,10 @@ export default class NavBarSet extends Component {
         return this._trans();
     }
     _trans() {
-
-
         let {basic, sets} = this.props.dataSource;
-
+        basic.style && (basic.style = [style.navBarSetContainer, basic.style])
         return (
-            <View style={[style.navBarSetContainer, basic.style ? basic.style : void 0]}>
+            <View {...basic}>
                 <Text>
                     HouHou
                 </Text>
