@@ -1,7 +1,7 @@
 'use strict'
 
 import React, {Component} from 'react'
-import {StyleSheet, View, Text} from 'react-native'
+import {StyleSheet, View, Text, TouchableOpacity} from 'react-native'
 import Icon from 'react-native-vector-icons/FontAwesome'
 // import Icon from 'react-native-vector-icons/MaterialIcons'
 
@@ -39,21 +39,21 @@ export default class NavBarSet extends Component {
            let titleContainer = j == setListLength - 1 ? style.titleContainer :
                                 style.titleContainerWithBottomBorder
             return (
-                <View {...bar.custom}>
-                    <View {...bar.bar.iconStart.custom}>
-                        <Icon {...bar.bar.iconStart} />
-                    </View>
-                    <View style={titleContainer}>
-                        <View style={style.listBarTitle}>
-                            <Text {...bar.bar.title.custom}>
-                                {bar.bar.title.main}
-                            </Text>
+                <TouchableOpacity {...bar.custom}>
+                        <View {...bar.bar.iconStart.custom}>
+                            <Icon {...bar.bar.iconStart} />
                         </View>
-                        <View {...bar.bar.iconEnd.custom}>
-                            <Icon {...bar.bar.iconEnd} />
+                        <View style={titleContainer}>
+                            <View style={style.listBarTitle}>
+                                <Text {...bar.bar.title.custom}>
+                                    {bar.bar.title.main}
+                                </Text>
+                            </View>
+                            <View {...bar.bar.iconEnd.custom}>
+                                <Icon {...bar.bar.iconEnd} />
+                            </View>
                         </View>
-                    </View>
-                </View>
+                </TouchableOpacity>
             )
         }
         let createSet = (set, i) => {
