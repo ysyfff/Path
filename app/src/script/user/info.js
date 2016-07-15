@@ -64,6 +64,44 @@ export default class Info extends Component {
                     list: [{
                         bar: {
                             iconStart: {
+                                name: 'heart-o',
+                                size: 16,
+                                color: 'blueviolet'
+                            },
+                            iconEnd: {
+                                name: 'angle-right',
+                                size: 16,
+                                color: 'blueviolet'
+                            },
+                            title: {
+                                main: '步行记录',
+                                custom: {
+                                    style: {color: 'blueviolet'}
+                                }
+                            }
+                        }
+                    },{
+                        bar: {
+                            iconStart: {
+                                name: 'heart',
+                                size: 16,
+                                color: 'blueviolet'
+                            },
+                            iconEnd: {
+                                name: 'angle-right',
+                                size: 16,
+                                color: 'blueviolet'
+                            },
+                            title: {
+                                main: '跑步记录',
+                                custom: {
+                                    style: {color: 'blueviolet'}
+                                }
+                            }
+                        }
+                    },{
+                        bar: {
+                            iconStart: {
                                 name: 'subway',
                                 size: 16,
                                 color: 'blueviolet'
@@ -94,6 +132,44 @@ export default class Info extends Component {
                             },
                             title: {
                                 main: '公交记录',
+                                custom: {
+                                    style: {color: 'blueviolet'}
+                                }
+                            }
+                        }
+                    },{
+                        bar: {
+                            iconStart: {
+                                name: 'train',
+                                size: 16,
+                                color: 'blueviolet'
+                            },
+                            iconEnd: {
+                                name: 'angle-right',
+                                size: 16,
+                                color: 'blueviolet'
+                            },
+                            title: {
+                                main: '火车记录',
+                                custom: {
+                                    style: {color: 'blueviolet'}
+                                }
+                            }
+                        }
+                    },{
+                        bar: {
+                            iconStart: {
+                                name: 'plane',
+                                size: 16,
+                                color: 'blueviolet'
+                            },
+                            iconEnd: {
+                                name: 'angle-right',
+                                size: 16,
+                                color: 'blueviolet'
+                            },
+                            title: {
+                                main: '飞行记录',
                                 custom: {
                                     style: {color: 'blueviolet'}
                                 }
