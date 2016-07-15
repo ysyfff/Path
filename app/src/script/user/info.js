@@ -13,16 +13,36 @@ export default class Info extends Component {
     }
     render() {
         var data = {
-            basic: {
-                style: [{backgroundColor: 'skyblue', alignItems: 'center', justifyContent: 'center'}]
+            custom: {
+                style: [{backgroundColor: 'skyblue'}]
             },
             sets: [
-                [
-                    {
-                        iconName: '',
-                        title: '地铁记录'
+                {
+                    custom: {
+
+                    },
+                    list: [{
+                        custom: {
+
+                        },
+                        bar: {
+                            iconStart: {
+                                name: 'subway',
+                                size: 20,
+                                color: 'green'
+                            },
+                            iconEnd: {
+                                name: 'hand-o-right',
+                                size: 20,
+                                color: 'green'
+                            },
+                            title: '地铁记录'
+                        }
                     }
-                ]
+
+                    ]
+                }
+
             ]
         }
         return (

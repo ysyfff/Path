@@ -2,6 +2,7 @@
 
 import React, {Component} from 'react'
 import {StyleSheet, View, Text} from 'react-native'
+import Icon from 'react-native-vector-icons/FontAwesome'
 
 export default class NavBarSet extends Component {
     constructor(props) {
@@ -11,16 +12,40 @@ export default class NavBarSet extends Component {
         }
     }
     render() {
-        return this._trans();
+        return this._trans()
     }
     _trans() {
-        let {basic, sets} = this.props.dataSource;
-        basic.style && (basic.style = [style.navBarSetContainer, basic.style])
+        let {custom, sets} = this.props.dataSource
+        custom.style && (custom.style = [style.navBarSetContainer, custom.style])
+        let createBar = (bar, j) => {
+            bar.custom.key = bar.bar.key = j
+            return (
+                <View {...bar.custom}>
+                    <View>
+                        <Icon {...bar.bar.iconStart} />
+                    </View>
+                    <View>
+                        <Text>
+                            {bar.bar.title}
+                        </Text>
+                    </View>
+                    <View>
+                        <Icon {...bar.bar.iconEnd} />
+                    </View>
+                </View>
+            )
+        }
+        let createSet = (set, i) => {
+            set.custom.key = i
+            return (
+                <View {...set.custom}>
+                    {set.list.map(createBar)}
+                </View>
+            )
+        }
         return (
-            <View {...basic}>
-                <Text>
-                    HouHou
-                </Text>
+            <View {...custom}>
+                {sets.map(createSet)}
             </View>
         )
     }
@@ -29,6 +54,7 @@ export default class NavBarSet extends Component {
 
 const style = StyleSheet.create({
     navBarSetContainer: {
-        flex: 1
+        flex: 1,
+        paddingTop: 20,
     }
 })
