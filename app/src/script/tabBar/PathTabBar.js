@@ -4,7 +4,9 @@ import React, {Component} from 'react'
 import {Text, StyleSheet, View} from 'react-native'
 
 import TabBar from '../../../component/TabBar'
+
 import Info from '../user/info'
+import TestListView from '../test/testListView'
 
 
 export default class PathTabBar extends Component {
@@ -25,7 +27,7 @@ export default class PathTabBar extends Component {
                     title: '他的',
                     iconName: 'ios-alarm-outline',
                     selectedIconName: 'ios-alarm',
-                    renderedContent: <View style={styles.container}><Text>3</Text></View>
+                    renderedContent: <TestListView />
                 },
                 {
                     title: '我',
