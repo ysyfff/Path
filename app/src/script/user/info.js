@@ -2,7 +2,6 @@
 
 import React, {Component} from 'react'
 import {Text, View, StyleSheet} from 'react-native'
-import styles from '../../style/common'
 
 import NavBarSet from '../../../component/NavBarSet'
 
@@ -12,6 +11,7 @@ export default class Info extends Component {
         this.state = {}
     }
     render() {
+        var me = this;
         var data = {
             custom: {
                 style: [{backgroundColor: '#f8f8f8'}]
@@ -37,6 +37,11 @@ export default class Info extends Component {
                                 custom: {
                                     style: {color: 'blueviolet'}
                                 }
+                            },
+                            onPress: () => {
+                                me.props.navigators.push({
+                                    ident: 'Myself.basicInfo'
+                                })
                             }
                         }
                     },{

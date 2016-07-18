@@ -38,6 +38,8 @@ export default class NavBarSet extends Component {
                                j == setListLength - 1 ? css(style.listBarHasBottomBorder, bar.custom.style) : css(style.listBar, bar.custom.style);
            let titleContainer = j == setListLength - 1 ? style.titleContainer :
                                 style.titleContainerWithBottomBorder
+
+            bar.bar.onPress && (bar.custom.onPress = bar.bar.onPress)
             return (
                 <TouchableOpacity {...bar.custom}>
                         <View {...bar.bar.iconStart.custom}>

@@ -36,7 +36,7 @@ export default class PathTabBar extends Component {
                     defaultSelected: true,
                     onPress: () => {
                     },
-                    renderedContent: <Info />
+                    renderedContent: <Info navigators={this.props.navigators}/>
                 },
             ]
         }
