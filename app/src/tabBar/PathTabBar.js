@@ -3,11 +3,10 @@
 import React, {Component} from 'react'
 import {Text, StyleSheet, View} from 'react-native'
 
-import TabBar from '../../../component/TabBar'
+import TabBar from '../../component/TabBar'
 
 import Info from '../user/info'
-import TestListView from '../test/testListView'
-
+import TestListView from '../example/test/testListView'
 
 export default class PathTabBar extends Component {
     constructor(props) {

@@ -6,9 +6,9 @@
 import React, {Component} from 'react'
 import {AppRegistry, Navigator, Text} from 'react-native'
 
-import PathTabBar from './app/src/script/tabBar/PathTabBar'
-import NavAllDay from './app/src/script/test/testNavigator'
-import ViewContainer from './app/src/script/common/viewContainer'
+import PathTabBar from './app/src/tabBar/PathTabBar'
+import NavAllDay from './app/src/example/test/testNavigator'
+import ViewContainer from './app/src/common/viewContainer'
 
 class Path extends Component {
     _renderScene(route, navigators) {
