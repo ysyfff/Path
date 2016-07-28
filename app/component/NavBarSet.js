@@ -81,7 +81,6 @@ export default class NavBarSet extends Component {
 const style = StyleSheet.create({
     navBarSetContainer: {
         flex: 1,
-        paddingTop: 20,
     },
     setBar: {
         marginBottom: 20

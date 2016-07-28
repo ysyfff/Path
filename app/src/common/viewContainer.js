@@ -15,7 +15,7 @@ export default class ViewContainer extends Component {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        paddingTop: 22,
-        backgroundColor: '#eee',
+        marginTop: 62,
+        backgroundColor: '#f8f8f8',
     }
 })

@@ -19,7 +19,7 @@ export default class PathTabBar extends Component {
         var me = this
         return {
             tabBarProps: {
-                tintColor: "blue",
+                tintColor: "blueviolet",
             },
             tabBarItemsProps: [
                 {

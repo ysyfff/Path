@@ -4,7 +4,7 @@ import React, {Component} from 'react'
 import {Text, View, StyleSheet} from 'react-native'
 
 import NavBarSet from '../../component/NavBarSet'
-
+import ViewContainer from '../common/ViewContainer'
 export default class Info extends Component {
     constructor(props) {
         super(props)
@@ -185,7 +185,9 @@ export default class Info extends Component {
             ]
         }
         return (
-            <NavBarSet dataSource={data} />
+            <ViewContainer>
+                <NavBarSet dataSource={data} />
+            </ViewContainer>
         )
     }
 }
