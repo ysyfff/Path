@@ -4,11 +4,12 @@
  * @flow
  */
 import React, {Component} from 'react'
-import {AppRegistry, Navigator, Text} from 'react-native'
+import {AppRegistry, Navigator, Text, TouchableHighlight} from 'react-native'
 
 import PathTabBar from './app/src/tabBar/PathTabBar'
 import NavAllDay from './app/src/example/test/testNavigator'
 import ViewContainer from './app/src/common/viewContainer'
+import NavigatorIOSApp from './app/src/example/test/testNavigatorIOS'
 
 class Path extends Component {
     _renderScene(route, navigators) {
@@ -39,6 +40,29 @@ class Path extends Component {
                 initialRoute={{ident: 'Myself'}}
                 ref="myselfNavgitor"
                 renderScene={this._renderScene}
+                navigationBar={
+                 <Navigator.NavigationBar
+                   routeMapper={{
+                     LeftButton: (route, navigator, index, navState) =>
+                     {
+                       if (route.index === 0) {
+                         return null;
+                       } else {
+                         return (
+                           <TouchableHighlight onPress={() => navigator.pop()}>
+                             <Text>Back</Text>
+                           </TouchableHighlight>
+                         );
+                       }
+                     },
+                     RightButton: (route, navigator, index, navState) =>
+                       { return (<Text>Done</Text>); },
+                     Title: (route, navigator, index, navState) =>
+                       { return (<Text>Awesome Nav Bar</Text>); },
+                   }}
+                   style={{backgroundColor: 'gray'}}
+                 />
+                }
             />
         )
     }
