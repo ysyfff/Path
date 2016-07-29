@@ -7,6 +7,7 @@ import TabBar from '../../component/TabBar'
 
 import Info from '../user/info'
 import TestListView from '../example/test/testListView'
+import Skin from '../common/Skin'
 
 export default class PathTabBar extends Component {
     constructor(props) {
@@ -19,7 +20,7 @@ export default class PathTabBar extends Component {
         var me = this
         return {
             tabBarProps: {
-                tintColor: "blueviolet",
+                tintColor: Skin.baseColor,
             },
             tabBarItemsProps: [
                 {

@@ -5,6 +5,8 @@ import {Text, View, StyleSheet} from 'react-native'
 
 import NavBarSet from '../../component/NavBarSet'
 import ViewContainer from '../common/ViewContainer'
+import Skin from '../common/Skin'
+
 export default class Info extends Component {
     constructor(props) {
         super(props)
@@ -25,17 +27,17 @@ export default class Info extends Component {
                             iconStart: {
                                 name: 'user',
                                 size: 22,
-                                color: 'blueviolet'
+                                color: Skin.baseColor
                             },
                             iconEnd: {
                                 name: 'angle-right',
                                 size: 16,
-                                color: 'blueviolet'
+                                color: Skin.baseColor
                             },
                             title: {
                                 main: '基本信息',
                                 custom: {
-                                    style: {color: 'blueviolet'}
+                                    style: {color: Skin.baseColor}
                                 }
                             },
                             onPress: () => {
@@ -49,17 +51,17 @@ export default class Info extends Component {
                             iconStart: {
                                 name: 'history',
                                 size: 22,
-                                color: 'blueviolet'
+                                color: Skin.baseColor
                             },
                             iconEnd: {
                                 name: 'angle-right',
                                 size: 16,
-                                color: 'blueviolet'
+                                color: Skin.baseColor
                             },
                             title: {
                                 main: '历史记录',
                                 custom: {
-                                    style: {color: 'blueviolet'}
+                                    style: {color: Skin.baseColor}
                                 }
                             }
                         }
@@ -71,17 +73,17 @@ export default class Info extends Component {
                             iconStart: {
                                 name: 'heart-o',
                                 size: 22,
-                                color: 'blueviolet'
+                                color: Skin.baseColor
                             },
                             iconEnd: {
                                 name: 'angle-right',
                                 size: 16,
-                                color: 'blueviolet'
+                                color: Skin.baseColor
                             },
                             title: {
                                 main: '步行记录',
                                 custom: {
-                                    style: {color: 'blueviolet'}
+                                    style: {color: Skin.baseColor}
                                 }
                             }
                         }
@@ -90,17 +92,17 @@ export default class Info extends Component {
                             iconStart: {
                                 name: 'heart',
                                 size: 22,
-                                color: 'blueviolet'
+                                color: Skin.baseColor
                             },
                             iconEnd: {
                                 name: 'angle-right',
                                 size: 16,
-                                color: 'blueviolet'
+                                color: Skin.baseColor
                             },
                             title: {
                                 main: '跑步记录',
                                 custom: {
-                                    style: {color: 'blueviolet'}
+                                    style: {color: Skin.baseColor}
                                 }
                             }
                         }
@@ -109,17 +111,17 @@ export default class Info extends Component {
                             iconStart: {
                                 name: 'subway',
                                 size: 22,
-                                color: 'blueviolet'
+                                color: Skin.baseColor
                             },
                             iconEnd: {
                                 name: 'angle-right',
                                 size: 16,
-                                color: 'blueviolet'
+                                color: Skin.baseColor
                             },
                             title: {
                                 main: '地铁记录',
                                 custom: {
-                                    style: {color: 'blueviolet'}
+                                    style: {color: Skin.baseColor}
                                 }
                             }
                         }
@@ -128,17 +130,17 @@ export default class Info extends Component {
                             iconStart: {
                                 name: 'bus',
                                 size: 22,
-                                color: 'blueviolet'
+                                color: Skin.baseColor
                             },
                             iconEnd: {
                                 name: 'angle-right',
                                 size: 16,
-                                color: 'blueviolet'
+                                color: Skin.baseColor
                             },
                             title: {
                                 main: '公交记录',
                                 custom: {
-                                    style: {color: 'blueviolet'}
+                                    style: {color: Skin.baseColor}
                                 }
                             }
                         }
@@ -147,17 +149,17 @@ export default class Info extends Component {
                             iconStart: {
                                 name: 'train',
                                 size: 22,
-                                color: 'blueviolet'
+                                color: Skin.baseColor
                             },
                             iconEnd: {
                                 name: 'angle-right',
                                 size: 16,
-                                color: 'blueviolet'
+                                color: Skin.baseColor
                             },
                             title: {
                                 main: '火车记录',
                                 custom: {
-                                    style: {color: 'blueviolet'}
+                                    style: {color: Skin.baseColor}
                                 }
                             }
                         }
@@ -166,17 +168,17 @@ export default class Info extends Component {
                             iconStart: {
                                 name: 'plane',
                                 size: 22,
-                                color: 'blueviolet'
+                                color: Skin.baseColor
                             },
                             iconEnd: {
                                 name: 'angle-right',
                                 size: 16,
-                                color: 'blueviolet'
+                                color: Skin.baseColor
                             },
                             title: {
                                 main: '飞行记录',
                                 custom: {
-                                    style: {color: 'blueviolet'}
+                                    style: {color: Skin.baseColor}
                                 }
                             }
                         }

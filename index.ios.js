@@ -11,6 +11,8 @@ import NavAllDay from './app/src/example/test/testNavigator'
 import ViewContainer from './app/src/common/ViewContainer'
 import NavigatorIOSApp from './app/src/example/test/testNavigatorIOS'
 import Icon from 'react-native-vector-icons/FontAwesome'
+import Skin from './app/src/common/Skin'
+console.log(Skin)
 
 class Path extends Component {
     _renderScene(route, navigators) {
@@ -70,7 +72,7 @@ class Path extends Component {
                          );
                      },
                    }}
-                   style={{backgroundColor: 'blueviolet', borderBottomWidth: 1, borderBottomColor: '#eee'}}
+                   style={{backgroundColor: Skin.baseColor, borderBottomWidth: 1, borderBottomColor: '#eee'}}
                  />
                 }
             />
