@@ -70,4 +70,4 @@ class Path extends Component {
     }
 }
 
-AppRegistry.registerComponent('Path', () => NavAllDay)
+AppRegistry.registerComponent('Path', () => Path)
