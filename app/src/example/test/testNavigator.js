@@ -43,7 +43,7 @@ export default class NavAllDay extends Component {
              Title: (route, navigator, index, navState) =>
                {
                    if(index == 0) {
-                        return (<Text>Awesome Nav Bar</Text>);
+                        return (<Text>Awesome Nav Basr</Text>);
                    }else{
                        return (<Text>FUCK</Text>)
                    }
@@ -53,8 +53,6 @@ export default class NavAllDay extends Component {
            style={{backgroundColor: 'gray'}}
          />
         }
-        configureScene={(route, routeStack) =>
-            Navigator.SceneConfigs.HorizontalSwipeJump}
       />
     );
   }
