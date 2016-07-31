@@ -41,7 +41,14 @@ export default class NavAllDay extends Component {
              RightButton: (route, navigator, index, navState) =>
                { return (<Text>Done</Text>); },
              Title: (route, navigator, index, navState) =>
-               { return (<Text>Awesome Nav Bar</Text>); },
+               {
+                   if(index == 0) {
+                        return (<Text>Awesome Nav Bar</Text>);
+                   }else{
+                       return (<Text>FUCK</Text>)
+                   }
+
+               },
            }}
            style={{backgroundColor: 'gray'}}
          />

@@ -12,72 +12,62 @@ import ViewContainer from './app/src/common/ViewContainer'
 import NavigatorIOSApp from './app/src/example/test/testNavigatorIOS'
 import Icon from 'react-native-vector-icons/FontAwesome'
 import Skin from './app/src/common/Skin'
-console.log(Skin)
+import Nav from './app/component/Nav'
 
 class Path extends Component {
-    _renderScene(route, navigators) {
-        switch(route.ident) {
-            case 'Myself':
-                return (
-                    <PathTabBar navigators={navigators} />
-                )
-                break;
-            case 'Myself.basicInfo':
-                return (
-                    <ViewContainer>
-                        <Text>
-                        Welcome to ${route.ident}
-                        </Text>
-                    </ViewContainer>
-                )
-            default:
-                return (
-                    <Text>{`You messed something up: ${route.ident}`}</Text>
-                )
+    render() {
+        const NavDataSource = {
+            initialRoute: 'Myself',
+            route: {
+                Myself: {
+                    renderScene: function(route, navigators) {
+                        return (
+                            <PathTabBar navigators={navigators} />
+                        )
+                    },
+                    NavBar: {
+                        routeMapper: {
+                            LeftButton: '',
+                            RightButton: '',
+                            Title: (
+                                <Text style={{fontSize: 18}}>我</Text>
+                            )
+                        },
+                        style: {backgroundColor: Skin.baseColor}
+                    }
+                },
+                'Myself.basicInfo': {
+                    renderScene: function(route, navigators) {
+                        return (
+                            <ViewContainer>
+                                <Text>
+                                Welcome to ${route.ident}
+                                </Text>
+                            </ViewContainer>
+                        )
+                    },
+                    NavBar: {
+                        routeMapper: {
+                            LeftButton: (
+                                <View style={{flex: 1, flexDirection: 'row', alignItems:"center", paddingLeft: 15, paddingRight: 10, paddingTop: 10, paddingBottom: 10}}>
+                                    <Icon name="angle-left" color="black" size={26} />
+                                </View>
+                            ),
+                            RightButton: '',
+                            Title: (
+                                <Text style={{fontSize: 18}}>基本信息</Text>
+                            )
+                        },
+                        style: {backgroundColor: 'gray'}
+                    }
+                }
+            }
         }
 
-    }
-    render() {
         return (
-            <Navigator
-                initialRoute={{ident: 'Myself', index: 0}}
-                ref="myselfNavgitor"
-                renderScene={this._renderScene}
-                navigationBar={
-                 <Navigator.NavigationBar
-                   routeMapper={{
-                     LeftButton: (route, navigator, index, navState) =>{
-                       if (route.index === 0) {
-                         return null;
-                       } else {
-                         return (
-                             <View style={{flex: 1, justifyContent: 'center'}}>
-                                <TouchableHighlight onPress={() => navigator.pop()}>
-                                    <View style={{flex: 1, flexDirection: 'row', alignItems:"center", paddingLeft: 15, paddingRight: 10, paddingTop: 10, paddingBottom: 10}}>
-                                        <Icon name="angle-left" color="black" size={26} />
-                                    </View>
-                                </TouchableHighlight>
-                            </View>
-                         );
-                       }
-                     },
-                     RightButton: (route, navigator, index, navState) =>{
-                         return null;
-                     },
-                     Title: (route, navigator, index, navState) =>{
-                         return (
-                             <View style={{flex: 1, justifyContent: 'center'}}>
-                                <Text style={{fontSize: 18}}>我</Text>
-                             </View>
-                         );
-                     },
-                   }}
-                   style={{backgroundColor: Skin.baseColor, borderBottomWidth: 1, borderBottomColor: '#eee'}}
-                 />
-                }
-            />
+            <Nav dataSource={NavDataSource} />
         )
     }
 }
 
-AppRegistry.registerComponent('Path', () => Path)
+AppRegistry.registerComponent('Path', () => NavAllDay)
