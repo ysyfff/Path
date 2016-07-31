@@ -7,7 +7,12 @@ export default class NavAllDay extends Component {
       {title: 'First Scene', index: 0},
       {title: 'Second Scene', index: 1},
     ];
+    const Ctitle={
+        0: 1,
+        1: 2
+    };
     return (
+
       <Navigator
         initialRoute={routes[0]}
         initialRouteStack={routes}
@@ -42,10 +47,10 @@ export default class NavAllDay extends Component {
                { return (<Text>Done</Text>); },
              Title: (route, navigator, index, navState) =>
                {
-                   if(index == 0) {
-                        return (<Text>Awesome Nav Basr</Text>);
+                   if(Ctitle[index]) {
+                        return (<Text>{Ctitle[index]}</Text>);
                    }else{
-                       return (<Text>FUCK</Text>)
+                       return null;
                    }
 
                },
