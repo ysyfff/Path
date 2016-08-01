@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 
 import ViewContainer from '../../common/ViewContainer'
-import {BtnO} from '../../../component/Btn'
+import Btn from '../../../component/Btn'
 
 export default class Basic extends Component {
     constructor(props) {
@@ -17,12 +17,12 @@ export default class Basic extends Component {
     render() {
         return (
             <ViewContainer>
-                <BtnO style={[{backgroundColor: 'red'}]} disabled={this.state.disableRight} onPress={this.disableRight.bind(this)}>
+                <Btn style={[{backgroundColor: 'red'}]} disabled={this.state.disableRight} onPress={this.disableRight.bind(this)}>
                     Right
-                </BtnO>
-                <BtnO>
+                </Btn>
+                <Btn>
                     Done
-                </BtnO>
+                </Btn>
             </ViewContainer>
         )
     }

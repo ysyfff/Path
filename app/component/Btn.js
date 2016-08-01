@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import {StyleSheet, TouchableOpacity, TouchableHighlight, Text} from 'react-native'
 
-export class BtnO extends Component {
+export default class Btn extends Component {
     render() {
         return this._trans();
     }
@@ -24,14 +24,6 @@ export class BtnO extends Component {
     }
 }
 
-export class BtnH extends Component {
-    render() {
-
-    }
-    _trans() {
-
-    }
-}
 
 const style = StyleSheet.create({
     btn: {
@@ -53,6 +45,7 @@ const style = StyleSheet.create({
     },
     txt: {
         textAlign: 'center',
+        color: 'white'
     },
     dodgerblue: {
         backgroundColor: 'dodgerblue'
