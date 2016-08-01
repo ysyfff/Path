@@ -10,7 +10,7 @@ let css = (deft, custom) => {
 }
 
 let setListLength = 0;
-export default class NavBarSet extends Component {
+export default class NavBar extends Component {
     constructor(props) {
         super(props)
     }
@@ -20,7 +20,7 @@ export default class NavBarSet extends Component {
     _trans() {
         let {custom, sets} = this.props.dataSource
 
-        custom.style = css(style.navBarSetContainer, custom.style)
+        custom.style = css(style.navBarContainer, custom.style)
         let createBar = (bar, j) => {
 
             !bar.custom && (bar.custom = {})
@@ -79,7 +79,7 @@ export default class NavBarSet extends Component {
 
 
 const style = StyleSheet.create({
-    navBarSetContainer: {
+    navBarContainer: {
         flex: 1,
     },
     setBar: {

@@ -3,7 +3,7 @@
 import React, {Component} from 'react'
 import {Text, View, StyleSheet} from 'react-native'
 
-import NavBarSet from '../../component/NavBarSet'
+import NavBar from '../../component/NavBar'
 import ViewContainer from '../common/ViewContainer'
 import Skin from '../common/Skin'
 
@@ -188,7 +188,7 @@ export default class Info extends Component {
         }
         return (
             <ViewContainer>
-                <NavBarSet dataSource={data} />
+                <NavBar dataSource={data} />
             </ViewContainer>
         )
     }

@@ -5,7 +5,7 @@ import {Text, StyleSheet, View} from 'react-native'
 
 import TabBar from '../../component/TabBar'
 
-import Info from '../user/info'
+import Info from '../user/Info'
 import TestListView from '../example/test/testListView'
 import Skin from '../common/Skin'
 

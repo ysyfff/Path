@@ -7,6 +7,8 @@ import React, {Component} from 'react'
 import {AppRegistry, Navigator, Text, TouchableHighlight, View} from 'react-native'
 
 import PathTabBar from './app/src/tabBar/PathTabBar'
+import Basic from './app/src/user/basic/Basic'
+
 import NavAllDay from './app/src/example/test/testNavigator'
 import ViewContainer from './app/src/common/ViewContainer'
 import NavigatorIOSApp from './app/src/example/test/testNavigatorIOS'
@@ -38,13 +40,7 @@ class Path extends Component {
                 },
                 'Myself.basicInfo': {
                     renderScene: function(route, navigators) {
-                        return (
-                            <ViewContainer>
-                                <Text>
-                                Welcome to ${route.ident}
-                                </Text>
-                            </ViewContainer>
-                        )
+                        return (<Basic />)
                     },
                     NavBar: {
                         routeMapper: {
