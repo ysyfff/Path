@@ -7,10 +7,13 @@ export class BtnO extends Component {
     }
     _trans() {
         const opacityProps = Object.assign({}, this.props);
-        console.log(opacityProps.style)
+
         //如果style是数组呢??? React Native兼容了[{}, {}, [{}, {}]]这种情况！！！
         opacityProps.style = opacityProps.style ? [style.btn, style.dodgerblue, opacityProps.style] : [style.btn, style.dodgerblue];
-        const tstyle = opacityProps.tstyle ? [style.txt, opacityProps.tstyle] : style.txt;
+        const tstyle = opacityProps.tstyle ? [style.txt, opacityProps.tstyle] : [style.txt];
+
+        //如果被disabled了，增加disabled样式
+        opacityProps.disabled && (opacityProps.style.push(style.disabled), tstyle.push(style.disabledTxt));
         return (
             <TouchableOpacity {...opacityProps}>
                 <Text style={tstyle}>
@@ -42,8 +45,14 @@ const style = StyleSheet.create({
         marginTop: 5,
         marginRight: 5,
     },
+    disabled: {
+        backgroundColor: 'gainsboro',
+    },
+    disabledTxt: {
+        color: 'darkgray'
+    },
     txt: {
-        textAlign: 'center'
+        textAlign: 'center',
     },
     dodgerblue: {
         backgroundColor: 'dodgerblue'

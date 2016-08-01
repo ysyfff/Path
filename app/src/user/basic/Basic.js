@@ -17,10 +17,10 @@ export default class Basic extends Component {
     render() {
         return (
             <ViewContainer>
-                <BtnO style={[{backgroundColor: 'red'}]} tstyle={{color: 'white'}} disabled={this.state.disableRight} onPress={this.disableRight.bind(this)}>
+                <BtnO style={[{backgroundColor: 'red'}]} disabled={this.state.disableRight} onPress={this.disableRight.bind(this)}>
                     Right
                 </BtnO>
-                <BtnO tstyle={{color: 'white'}}>
+                <BtnO>
                     Done
                 </BtnO>
             </ViewContainer>
