@@ -26,12 +26,12 @@ export default class Basic extends Component {
                     Done
                 </Btn>
                 <View style={{flexDirection: 'row'}}>
-                        <Btn type="opacity" bg="blue" c="white" style={{width: 100, height: 30}}>
+                        <Btn type="opacity" bg="blue" c="white" style={{width: 100}}>
                             Submit
                         </Btn>
                         <View style={{flex: 1}}>
                         </View>
-                        <Btn type="opacity" bg="yellow" c="black" style={{width: 100, height: 30, }}>
+                        <Btn type="opacity" bg="pink" c="black" style={{width: 100 }}>
                             Cancel
                         </Btn>
                 </View>

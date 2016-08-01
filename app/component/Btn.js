@@ -55,10 +55,10 @@ const style = StyleSheet.create({
         paddingBottom: 6,
         paddingLeft: 10,
         borderRadius: 999, //设置的足够大，确保是圆角
-        marginLeft: 10,
-        marginRight: 10,
         marginTop: 5,
-        marginRight: 5,
+        marginRight: 10,
+        marginBottom: 5,
+        marginLeft: 10,
     },
     disabled: {
         backgroundColor: 'gainsboro',
