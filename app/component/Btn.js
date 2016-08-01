@@ -7,11 +7,14 @@ export class BtnO extends Component {
     }
     _trans() {
         const opacityProps = Object.assign({}, this.props);
-
+        console.log(opacityProps.style)
+        //如果style是数组呢??? React Native兼容了[{}, {}, [{}, {}]]这种情况！！！
+        opacityProps.style = opacityProps.style ? [style.btn, style.dodgerblue, opacityProps.style] : [style.btn, style.dodgerblue];
+        const tstyle = opacityProps.tstyle ? [style.txt, opacityProps.tstyle] : style.txt;
         return (
-            <TouchableOpacity {...opacityProps} style={[style.btn, style.dodgerblue]}>
-                <Text>
-                    Right
+            <TouchableOpacity {...opacityProps}>
+                <Text style={tstyle}>
+                    {this.props.children}
                 </Text>
             </TouchableOpacity>
         )
@@ -33,6 +36,14 @@ const style = StyleSheet.create({
         paddingRight: 10,
         paddingBottom: 6,
         paddingLeft: 10,
+        borderRadius: 999, //设置的足够大，确保是圆角
+        marginLeft: 10,
+        marginRight: 10,
+        marginTop: 5,
+        marginRight: 5,
+    },
+    txt: {
+        textAlign: 'center'
     },
     dodgerblue: {
         backgroundColor: 'dodgerblue'
