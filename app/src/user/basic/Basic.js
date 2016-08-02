@@ -19,7 +19,10 @@ export default class Basic extends Component {
         return (
             <ViewContainer>
                 <Btn style={[{backgroundColor: 'red'}]}
-                    disabled={this.state.disableRight} onPress={this.disableRight.bind(this)}>
+                    disabled={this.state.disableRight} onPress={() => {
+                        this.disableRight.bind(this)(), console.log('nooo')
+                    }
+                    }>
                     Right
                 </Btn>
                 <Btn type="highlight" activeOpacity={0.2}>

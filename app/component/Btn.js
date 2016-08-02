@@ -50,9 +50,9 @@ export default class Btn extends Component {
 
 const style = StyleSheet.create({
     btn: {
-        paddingTop: 6,
+        paddingTop: 8,
         paddingRight: 10,
-        paddingBottom: 6,
+        paddingBottom: 8,
         paddingLeft: 10,
         borderRadius: 999, //设置的足够大，确保是圆角
         marginTop: 5,

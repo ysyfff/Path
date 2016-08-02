@@ -63,6 +63,9 @@ export default class Info extends Component {
                                 custom: {
                                     style: {color: Skin.baseColor}
                                 }
+                            },
+                            onPress: (event) => {
+                                console.log(event, arguments)
                             }
                         }
                     }]
