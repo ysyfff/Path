@@ -1,10 +1,14 @@
 # Path
 
-## TODO
-* ~~TabBar~~
-* ~~NavBar~~
-* ~~Nav~~
-* Form 参考tcomb, tcomb-validation, tcomb-form-native
+## Component
+### Done
+* `TabBar`
+* `NavBar`
+* `Nav`
+* `Btn`
+
+### Todo
+* `Form` 参考`tcomb`, `tcomb-validation`, `tcomb-form-native`
 
 ## Problem
 ***
