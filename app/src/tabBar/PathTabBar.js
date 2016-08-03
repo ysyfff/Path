@@ -30,11 +30,12 @@ export default class PathTabBar extends Component {
             },
             tabBarItemsProps: [
                 {
-                    title: '他的',
+                    title: '地图',
                     iconName: 'ios-alarm-outline',
                     selectedIconName: 'ios-alarm',
                     onPress: () => {
                         console.log('what??')
+                        me.props.navigators.resetTo({ident: 'Map'})
                     },
                     renderedContent: <TestListView navigators={me.props.navigators}/>
                 },
@@ -45,7 +46,7 @@ export default class PathTabBar extends Component {
                     defaultSelected: true,
                     onPress: () => {
                         // debugger
-                        // me.props.navigators.resetTo({ident: 'Myself'})
+                        me.props.navigators.resetTo({ident: 'Myself'})
                     },
                     renderedContent: <Info navigators={me.props.navigators}/>
                 },
@@ -54,7 +55,7 @@ export default class PathTabBar extends Component {
     }
     render() {
         return (
-            <TabBar dataSource={this._createTabBar()} />
+            <TabBar dataSource={this._createTabBar()} initialTab={this.props.initialTab} />
         )
     }
 }

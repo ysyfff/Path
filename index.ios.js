@@ -24,7 +24,7 @@ class Path extends Component {
                 Myself: {
                     renderScene: function(route, navigators) {
                         return (
-                            <PathTabBar navigators={navigators} />
+                            <PathTabBar navigators={navigators} initialTab='我'/>
                         )
                     },
                     NavBar: {
@@ -33,6 +33,21 @@ class Path extends Component {
                             RightButton: '',
                             Title: (
                                 <Text style={{fontSize: 18}}>我</Text>
+                            )
+                        },
+                        style: {backgroundColor: Skin.baseColor}
+                    }
+                },
+                'Map': {
+                    renderScene: function(route, navigators) {
+                        return <PathTabBar navigators={navigators} initialTab='地图' />;
+                    },
+                    NavBar: {
+                        routeMapper: {
+                            LeftButton: '',
+                            RightButton: '',
+                            Title: (
+                                <Text style={{fontSize: 18}}>地图</Text>
                             )
                         },
                         style: {backgroundColor: Skin.baseColor}

@@ -29,6 +29,7 @@ export default class TabBar extends Component {
             item.selected = (this.state.selectedTab == item.title);
             //处理defaultSelected字段，设置selectedTab属性
             item.defaultSelected && (this.activedKey = item.key);
+            this.props.initialTab && (this.activedKey = this.props.initialTab);
             //截获onPress并处理onPress
             let tmpOnPress = item.onPress;
             item.onPress = () => {
