@@ -16,6 +16,12 @@ export default class PathTabBar extends Component {
             personCount: 0
         }
     }
+    _resetToMyself() {
+        this.props.navigators.resetTo({ident: 'Myself'});
+    }
+    _resetToMap() {
+        this.props.navigators.resetTo({ident: 'Map'})
+    }
     _createTabBar() {
         var me = this
         return {
@@ -27,7 +33,10 @@ export default class PathTabBar extends Component {
                     title: '他的',
                     iconName: 'ios-alarm-outline',
                     selectedIconName: 'ios-alarm',
-                    renderedContent: <TestListView />
+                    onPress: () => {
+                        console.log('what??')
+                    },
+                    renderedContent: <TestListView navigators={me.props.navigators}/>
                 },
                 {
                     title: '我',
@@ -35,8 +44,10 @@ export default class PathTabBar extends Component {
                     selectedIconName:'ios-person',
                     defaultSelected: true,
                     onPress: () => {
+                        // debugger
+                        // me.props.navigators.resetTo({ident: 'Myself'})
                     },
-                    renderedContent: <Info navigators={this.props.navigators}/>
+                    renderedContent: <Info navigators={me.props.navigators}/>
                 },
             ]
         }
