@@ -4,7 +4,7 @@ import Nav from '../../component/Nav'
 import Icon from 'react-native-vector-icons/FontAwesome'
 import Skin from '../common/Skin'
 
-import PathTabBar from '../tabBar/PathTabBar'
+import PathTabBar from '../roottab/PathTabBar'
 import Basic from '../user/info/basic/Basic'
 
 
