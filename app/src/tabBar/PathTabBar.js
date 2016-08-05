@@ -24,9 +24,9 @@ export default class PathTabBar extends Component {
             },
             tabBarItemsProps: [
                 {
-                    title: '地图',
-                    iconName: 'ios-alarm-outline',
-                    selectedIconName: 'ios-alarm',
+                    title: '足迹',
+                    iconName: 'ios-paw-outline', //flag
+                    selectedIconName: 'ios-paw',
                     onPress: () => {
                         console.log('what??')
                         me.props.navigators.resetTo({ident: 'Map'})
