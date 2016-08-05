@@ -3,9 +3,9 @@
 import React, {Component} from 'react'
 import {Text, View, StyleSheet} from 'react-native'
 
-import NavBar from '../../component/NavBar'
-import ViewContainer from '../common/ViewContainer'
-import Skin from '../common/Skin'
+import NavBar from '../../../component/NavBar'
+import ViewContainer from '../../common/ViewContainer'
+import Skin from '../../common/Skin'
 
 export default class Info extends Component {
     constructor(props) {
@@ -20,7 +20,7 @@ export default class Info extends Component {
             },
             sets: [{
                     custom: {
-                        style: {marginTop: 20}
+                        // style: {marginTop: 20}
                     },
                     list: [{
                         bar: {
@@ -65,7 +65,7 @@ export default class Info extends Component {
                                 }
                             },
                             onPress: (event) => {
-                                console.log(event, arguments)
+
                             }
                         }
                     }]

@@ -5,7 +5,7 @@ import {Text, StyleSheet, View} from 'react-native'
 
 import TabBar from '../../component/TabBar'
 
-import Info from '../user/Info'
+import Info from '../user/info/Info'
 import TestListView from '../example/test/testListView'
 import Skin from '../common/Skin'
 
@@ -15,12 +15,6 @@ export default class PathTabBar extends Component {
         this.state = {
             personCount: 0
         }
-    }
-    _resetToMyself() {
-        this.props.navigators.resetTo({ident: 'Myself'});
-    }
-    _resetToMap() {
-        this.props.navigators.resetTo({ident: 'Map'})
     }
     _createTabBar() {
         var me = this

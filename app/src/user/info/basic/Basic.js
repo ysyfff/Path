@@ -1,8 +1,8 @@
 import React, {Component} from 'react'
 import {View} from 'react-native'
 
-import ViewContainer from '../../common/ViewContainer'
-import Btn from '../../../component/Btn'
+import ViewContainer from '../../../common/ViewContainer'
+import Btn from '../../../../component/Btn'
 
 export default class Basic extends Component {
     constructor(props) {
@@ -16,6 +16,7 @@ export default class Basic extends Component {
         this.setState({disableRight: true})
     }
     render() {
+        console.log('66')
         return (
             <ViewContainer>
                 <Btn style={[{backgroundColor: 'red'}]}

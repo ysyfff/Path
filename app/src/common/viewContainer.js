@@ -1,13 +1,13 @@
 import React, {Component} from 'react'
-import {View, StyleSheet} from 'react-native'
+import {View, StyleSheet, ScrollView} from 'react-native'
 
 
 export default class ViewContainer extends Component {
     render() {
         return (
-            <View style={styles.container}>
+            <ScrollView style={styles.container}>
                 {this.props.children}
-            </View>
+            </ScrollView>
         )
     }
 }
@@ -15,7 +15,7 @@ export default class ViewContainer extends Component {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        marginTop: 62,
+        marginTop: 64,
         backgroundColor: '#f8f8f8',
     }
 })

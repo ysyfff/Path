@@ -7,7 +7,7 @@ import React, {Component} from 'react'
 import {AppRegistry, Navigator, Text, TouchableHighlight, View} from 'react-native'
 
 import PathTabBar from './app/src/tabBar/PathTabBar'
-import Basic from './app/src/user/basic/Basic'
+import Basic from './app/src/user/info/basic/Basic'
 
 import NavAllDay from './app/src/example/test/testNavigator'
 import ViewContainer from './app/src/common/ViewContainer'
