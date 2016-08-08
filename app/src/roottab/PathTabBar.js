@@ -6,7 +6,7 @@ import {Text, StyleSheet, View} from 'react-native'
 import TabBar from '../../component/TabBar'
 
 import Info from '../user/info/Info'
-import TestListView from '../example/test/testListView'
+import Foot from '../foot/Foot'
 import Skin from '../common/Skin'
 
 export default class PathTabBar extends Component {
@@ -31,7 +31,7 @@ export default class PathTabBar extends Component {
                         console.log('what??')
                         me.props.navigators.resetTo({ident: 'Map'})
                     },
-                    renderedContent: <TestListView navigators={me.props.navigators}/>
+                    renderedContent: <Foot navigators={me.props.navigators}/>
                 },
                 {
                     title: '我',
