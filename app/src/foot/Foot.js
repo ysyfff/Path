@@ -8,7 +8,7 @@ export default class Foot extends Component {
         console.log(MapView)
         return (
           <MapView
-            style={{height: 200, margin: 40}}
+            style={{flex:1, marginTop: 162}}
             showsUserLocation={true}
           />
         )
