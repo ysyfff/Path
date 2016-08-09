@@ -12,7 +12,7 @@ import {
   View
 } from 'react-native';
 
-class Path extends Component {
+class Foot extends Component {
   render() {
     return (
       <View style={styles.container}>
@@ -23,6 +23,7 @@ class Path extends Component {
           To get started, edit index.android.js
         </Text>
         <Text style={styles.instructions}>
+          Double tap R on your keyboard to reload,{'\n'}
           Shake or press menu button for dev menu
         </Text>
       </View>
@@ -49,4 +50,4 @@ const styles = StyleSheet.create({
   },
 });
 
-AppRegistry.registerComponent('Path', () => Path);
+AppRegistry.registerComponent('Foot', () => Foot);

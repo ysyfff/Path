@@ -1,0 +1,30 @@
+dependencies: \
+  /Users/ysy/code/Foot/node_modules/react-native/React/Base/RCTBatchedBridge.m \
+  /Users/ysy/code/Foot/node_modules/react-native/React/Base/RCTAssert.h \
+  /Users/ysy/code/Foot/node_modules/react-native/React/Base/RCTDefines.h \
+  /Users/ysy/code/Foot/node_modules/react-native/React/Base/RCTBridge.h \
+  /Users/ysy/code/Foot/node_modules/react-native/React/Base/RCTBridgeDelegate.h \
+  /Users/ysy/code/Foot/node_modules/react-native/React/Base/RCTJavaScriptLoader.h \
+  /Users/ysy/code/Foot/node_modules/react-native/React/Base/RCTBridgeModule.h \
+  /Users/ysy/code/Foot/node_modules/react-native/React/Base/RCTFrameUpdate.h \
+  /Users/ysy/code/Foot/node_modules/react-native/React/Base/RCTInvalidating.h \
+  /Users/ysy/code/Foot/node_modules/react-native/React/Base/RCTBridge+Private.h \
+  /Users/ysy/code/Foot/node_modules/react-native/React/Base/RCTBridgeMethod.h \
+  /Users/ysy/code/Foot/node_modules/react-native/React/Base/RCTConvert.h \
+  /Users/ysy/code/Foot/node_modules/react-native/React/CSSLayout/CSSLayout.h \
+  /Users/ysy/code/Foot/node_modules/react-native/React/CSSLayout/CSSMacros.h \
+  /Users/ysy/code/Foot/node_modules/react-native/React/Views/RCTAnimationType.h \
+  /Users/ysy/code/Foot/node_modules/react-native/React/Views/RCTBorderStyle.h \
+  /Users/ysy/code/Foot/node_modules/react-native/React/Views/RCTTextDecorationLineType.h \
+  /Users/ysy/code/Foot/node_modules/react-native/React/Base/RCTLog.h \
+  /Users/ysy/code/Foot/node_modules/react-native/React/Views/RCTPointerEvents.h \
+  /Users/ysy/code/Foot/node_modules/react-native/React/Base/RCTDisplayLink.h \
+  /Users/ysy/code/Foot/node_modules/react-native/React/Executors/RCTJSCExecutor.h \
+  /Users/ysy/code/Foot/node_modules/react-native/React/Base/RCTJavaScriptExecutor.h \
+  /Users/ysy/code/Foot/node_modules/react-native/React/Base/RCTModuleData.h \
+  /Users/ysy/code/Foot/node_modules/react-native/React/Base/RCTPerformanceLogger.h \
+  /Users/ysy/code/Foot/node_modules/react-native/React/Profiler/RCTProfile.h \
+  /Users/ysy/code/Foot/node_modules/react-native/React/Modules/RCTSourceCode.h \
+  /Users/ysy/code/Foot/node_modules/react-native/React/Base/RCTUtils.h \
+  /Users/ysy/code/Foot/node_modules/react-native/React/Modules/RCTRedBox.h \
+  /Users/ysy/code/Foot/node_modules/react-native/React/Base/RCTErrorCustomizer.h
